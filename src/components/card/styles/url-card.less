@@ -1,0 +1,75 @@
+@import '../../../themes/index.less';
+
+.urlCard {
+  .main {
+    display: flex;
+    flex-direction: column;
+    color: @text-color;
+
+    padding: 8px 16px;
+
+    .content {
+      display: flex;
+      width: 100%;
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 8px;
+        background-color: rgba(128, 128, 128, 0.1);
+      }
+
+      .info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+
+        h3 {
+          display: block;
+
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          color: @text-color;
+          font-size: @font-size;
+          line-height: 21px;
+        }
+
+        p {
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          color: @text-weak-color;
+          font-size: @font-sm-size;
+        }
+      }
+    }
+
+    .foot {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-top: 1px solid @border-color;
+      margin-top: 8px;
+      padding-top: 8px;
+
+      .tags {
+        .tag {
+          display: inline-block;
+          margin-right: 4px;
+        }
+      }
+
+      .right {
+        font-family: 'iconfont';
+        font-size: 16px;
+        color: @text-weak-color;        
+      }
+    }
+  }
+}
