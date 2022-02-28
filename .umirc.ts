@@ -10,5 +10,4 @@ export default defineConfig({
   fastRefresh: {},
   ssr: {},
   metas: [{ name: 'description', content: '程序员常用的工具集合' }],
-  exportStatic: {},
 });

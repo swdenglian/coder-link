@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "程序箱",
   "scripts": {
+    "service": "pm2 start ./service/index.js",
+    "service:stop": "pm2 stop ./service/index.js",
     "start": "umi dev",
     "build": "umi build",
     "postinstall": "umi generate tmp",
@@ -24,6 +26,8 @@
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
     "classnames": "^2.3.1",
+    "express": "^4.17.3",
+    "pm2": "^5.2.0",
     "react": "17.x",
     "react-dom": "17.x",
     "reset-css": "^5.0.1",
